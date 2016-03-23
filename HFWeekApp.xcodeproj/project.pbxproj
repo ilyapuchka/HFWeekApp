@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09A4BCAC1CA1E6CF00585C0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4BCAB1CA1E6CF00585C0C /* AppDelegate.swift */; };
+		09A4BCAE1CA1E6CF00585C0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A4BCAD1CA1E6CF00585C0C /* Assets.xcassets */; };
+		09A4BCB11CA1E6CF00585C0C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A4BCAF1CA1E6CF00585C0C /* MainMenu.xib */; };
+		09A4BCB91CA1E9C500585C0C /* HFCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4BCB81CA1E9C500585C0C /* HFCalendar.swift */; };
+		09A4BCCD1CA87CD700585C0C /* MLCalendarBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4BCC71CA87CD700585C0C /* MLCalendarBackground.m */; };
+		09A4BCCE1CA87CD700585C0C /* MLCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4BCC91CA87CD700585C0C /* MLCalendarCell.m */; };
+		09A4BCCF1CA87CD700585C0C /* MLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4BCCB1CA87CD700585C0C /* MLCalendarView.m */; };
+		09A4BCD01CA87CD700585C0C /* MLCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A4BCCC1CA87CD700585C0C /* MLCalendarView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09A4BCA81CA1E6CF00585C0C /* HFWeekApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFWeekApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A4BCAB1CA1E6CF00585C0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09A4BCAD1CA1E6CF00585C0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09A4BCB01CA1E6CF00585C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		09A4BCB21CA1E6CF00585C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09A4BCB81CA1E9C500585C0C /* HFCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFCalendar.swift; sourceTree = "<group>"; };
+		09A4BCC51CA87CD700585C0C /* HFWeekApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HFWeekApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		09A4BCC61CA87CD700585C0C /* MLCalendarBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLCalendarBackground.h; path = Calendar/MLCalendarSample/MLCalendarBackground.h; sourceTree = "<group>"; };
+		09A4BCC71CA87CD700585C0C /* MLCalendarBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLCalendarBackground.m; path = Calendar/MLCalendarSample/MLCalendarBackground.m; sourceTree = "<group>"; };
+		09A4BCC81CA87CD700585C0C /* MLCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLCalendarCell.h; path = Calendar/MLCalendarSample/MLCalendarCell.h; sourceTree = "<group>"; };
+		09A4BCC91CA87CD700585C0C /* MLCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLCalendarCell.m; path = Calendar/MLCalendarSample/MLCalendarCell.m; sourceTree = "<group>"; };
+		09A4BCCA1CA87CD700585C0C /* MLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLCalendarView.h; path = Calendar/MLCalendarSample/MLCalendarView.h; sourceTree = "<group>"; };
+		09A4BCCB1CA87CD700585C0C /* MLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLCalendarView.m; path = Calendar/MLCalendarSample/MLCalendarView.m; sourceTree = "<group>"; };
+		09A4BCCC1CA87CD700585C0C /* MLCalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MLCalendarView.xib; path = Calendar/MLCalendarSample/MLCalendarView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09A4BCA51CA1E6CF00585C0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09A4BC9F1CA1E6CF00585C0C = {
+			isa = PBXGroup;
+			children = (
+				09A4BCAA1CA1E6CF00585C0C /* HFWeekApp */,
+				09A4BCA91CA1E6CF00585C0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09A4BCA91CA1E6CF00585C0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09A4BCA81CA1E6CF00585C0C /* HFWeekApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09A4BCAA1CA1E6CF00585C0C /* HFWeekApp */ = {
+			isa = PBXGroup;
+			children = (
+				09A4BCC41CA87CCA00585C0C /* MLCalendar */,
+				09A4BCAB1CA1E6CF00585C0C /* AppDelegate.swift */,
+				09A4BCB81CA1E9C500585C0C /* HFCalendar.swift */,
+				09A4BCAD1CA1E6CF00585C0C /* Assets.xcassets */,
+				09A4BCAF1CA1E6CF00585C0C /* MainMenu.xib */,
+				09A4BCB21CA1E6CF00585C0C /* Info.plist */,
+				09A4BCC51CA87CD700585C0C /* HFWeekApp-Bridging-Header.h */,
+			);
+			path = HFWeekApp;
+			sourceTree = "<group>";
+		};
+		09A4BCC41CA87CCA00585C0C /* MLCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				09A4BCC61CA87CD700585C0C /* MLCalendarBackground.h */,
+				09A4BCC71CA87CD700585C0C /* MLCalendarBackground.m */,
+				09A4BCC81CA87CD700585C0C /* MLCalendarCell.h */,
+				09A4BCC91CA87CD700585C0C /* MLCalendarCell.m */,
+				09A4BCCA1CA87CD700585C0C /* MLCalendarView.h */,
+				09A4BCCB1CA87CD700585C0C /* MLCalendarView.m */,
+				09A4BCCC1CA87CD700585C0C /* MLCalendarView.xib */,
+			);
+			name = MLCalendar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09A4BCA71CA1E6CF00585C0C /* HFWeekApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09A4BCB51CA1E6CF00585C0C /* Build configuration list for PBXNativeTarget "HFWeekApp" */;
+			buildPhases = (
+				09A4BCA41CA1E6CF00585C0C /* Sources */,
+				09A4BCA51CA1E6CF00585C0C /* Frameworks */,
+				09A4BCA61CA1E6CF00585C0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HFWeekApp;
+			productName = HFWeekApp;
+			productReference = 09A4BCA81CA1E6CF00585C0C /* HFWeekApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09A4BCA01CA1E6CF00585C0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ilay Puchka";
+				TargetAttributes = {
+					09A4BCA71CA1E6CF00585C0C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 09A4BCA31CA1E6CF00585C0C /* Build configuration list for PBXProject "HFWeekApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09A4BC9F1CA1E6CF00585C0C;
+			productRefGroup = 09A4BCA91CA1E6CF00585C0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09A4BCA71CA1E6CF00585C0C /* HFWeekApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09A4BCA61CA1E6CF00585C0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A4BCD01CA87CD700585C0C /* MLCalendarView.xib in Resources */,
+				09A4BCAE1CA1E6CF00585C0C /* Assets.xcassets in Resources */,
+				09A4BCB11CA1E6CF00585C0C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09A4BCA41CA1E6CF00585C0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A4BCCD1CA87CD700585C0C /* MLCalendarBackground.m in Sources */,
+				09A4BCCF1CA87CD700585C0C /* MLCalendarView.m in Sources */,
+				09A4BCAC1CA1E6CF00585C0C /* AppDelegate.swift in Sources */,
+				09A4BCCE1CA87CD700585C0C /* MLCalendarCell.m in Sources */,
+				09A4BCB91CA1E9C500585C0C /* HFCalendar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		09A4BCAF1CA1E6CF00585C0C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09A4BCB01CA1E6CF00585C0C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09A4BCB31CA1E6CF00585C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09A4BCB41CA1E6CF00585C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		09A4BCB61CA1E6CF00585C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HFWeekApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ilya.puchka.HFWeekApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HFWeekApp/HFWeekApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09A4BCB71CA1E6CF00585C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HFWeekApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ilya.puchka.HFWeekApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HFWeekApp/HFWeekApp-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09A4BCA31CA1E6CF00585C0C /* Build configuration list for PBXProject "HFWeekApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A4BCB31CA1E6CF00585C0C /* Debug */,
+				09A4BCB41CA1E6CF00585C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09A4BCB51CA1E6CF00585C0C /* Build configuration list for PBXNativeTarget "HFWeekApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09A4BCB61CA1E6CF00585C0C /* Debug */,
+				09A4BCB71CA1E6CF00585C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09A4BCA01CA1E6CF00585C0C /* Project object */;
+}
