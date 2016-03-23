@@ -18,7 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, MLCalendarViewDelegate {
         let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
         statusItem.highlightMode = false
         statusItem.button?.target = self
-        statusItem.button?.action = #selector(AppDelegate.showContextMenu(_:))
+        statusItem.button?.action = Selector("showContextMenu:")
         let options: NSEventMask = [.LeftMouseUpMask, .RightMouseUpMask]
         statusItem.button?.sendActionOn(Int(options.rawValue))
         return statusItem
@@ -26,7 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, MLCalendarViewDelegate {
     
     lazy var statusMenu: NSMenu = {
         let rightClickMenu = NSMenu()
-        rightClickMenu.addItem(NSMenuItem(title: "Close", action: #selector(AppDelegate.closeApp), keyEquivalent: ""))
+        rightClickMenu.addItem(NSMenuItem(title: "Close", action: Selector("closeApp"), keyEquivalent: ""))
         return rightClickMenu
     }()
 
@@ -80,9 +80,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, MLCalendarViewDelegate {
         updateWeek()
         setupTimer()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AppDelegate.setupTimer), name: NSSystemTimeZoneDidChangeNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AppDelegate.updateWeek), name: NSSystemClockDidChangeNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AppDelegate.setupTimer), name: NSSystemClockDidChangeNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("setupTimer"), name: NSSystemTimeZoneDidChangeNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("updateWeek"), name: NSSystemClockDidChangeNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("setupTimer"), name: NSSystemClockDidChangeNotification, object: nil)
         
 //        SMLoginItemSetEnabled(NSBundle.mainBundle().bundleIdentifier!, true)
     }
@@ -93,7 +93,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, MLCalendarViewDelegate {
         }
         
         let nextWeekDate = HFCalendar.startDateForWeek(HFCalendar.currentWeek().nextWeek)
-        timer = NSTimer(fireDate: nextWeekDate, interval: 7*24*60*60, target: self, selector: #selector(AppDelegate.updateWeek), userInfo: nil, repeats: true)
+        timer = NSTimer(fireDate: nextWeekDate, interval: 7*24*60*60, target: self, selector: Selector("updateWeek"), userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
     }
     
