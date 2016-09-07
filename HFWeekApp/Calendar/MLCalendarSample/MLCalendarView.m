@@ -248,6 +248,17 @@
 	NSInteger lastDay = [self lastDayOfTheMonth];
 	NSInteger col = [self colForDay:firstDay];
 	NSInteger day = 1;
+
+    //display the reset of the previous month
+    for (long _col = col; _col >= 0; _col--) {
+        MLCalendarCell*cell = self.dayCells[0][_col];
+        NSDate* d = [self monthDay:day];
+        cell.representedDate = d;
+        cell.textColor = [NSColor grayColor];
+        day--;
+    }
+
+    day = 1;
 	for(int row = 0; row < 6;row++) {
 		for(; col < 7; col++) {
 			if(day <= lastDay) {
@@ -256,6 +267,7 @@
 				cell.representedDate = d;
 //				BOOL selected = [MLCalendarView isSameDate:d date:_selectedDate];
 //				cell.selected = selected;
+                cell.textColor = nil;
                 if ([d compare:_startDate] != NSOrderedAscending &&
                     [d compare:_endDate] != NSOrderedDescending) {
                     cell.selected = YES;
@@ -263,6 +275,18 @@
 
 				day++;
 			}
+            else {
+                //display the beginning of the next month
+                MLCalendarCell*cell = self.dayCells[row][col];
+                NSDate* d = [self monthDay:day];
+                cell.representedDate = d;
+                cell.textColor = [NSColor grayColor];
+                if ([d compare:_startDate] != NSOrderedAscending &&
+                    [d compare:_endDate] != NSOrderedDescending) {
+                    cell.selected = YES;
+                }
+                day++;
+            }
 		}
 		col = 0;
 	}

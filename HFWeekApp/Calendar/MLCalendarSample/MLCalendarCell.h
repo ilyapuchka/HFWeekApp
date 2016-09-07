@@ -18,5 +18,6 @@
 @property (weak) MLCalendarView* owner;
 @property (nonatomic, strong) NSDate* representedDate;
 @property (nonatomic) BOOL selected;
+@property (copy) NSColor *textColor;
 
 @end

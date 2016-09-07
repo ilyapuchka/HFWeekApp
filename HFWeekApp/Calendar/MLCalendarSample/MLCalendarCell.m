@@ -96,7 +96,7 @@
 			
 			
 			//title
-			NSDictionary *attrs = @{NSParagraphStyleAttributeName: aParagraphStyle,NSFontAttributeName: self.font,NSForegroundColorAttributeName: self.owner.textColor};
+            NSDictionary *attrs = @{NSParagraphStyleAttributeName: aParagraphStyle,NSFontAttributeName: self.font,NSForegroundColorAttributeName: self.textColor ?: self.owner.textColor};
 			
 			NSSize size = [self.title sizeWithAttributes:attrs];
 			
