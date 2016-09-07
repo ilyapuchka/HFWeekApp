@@ -15,7 +15,43 @@
 		09A4BCCE1CA87CD700585C0C /* MLCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4BCC91CA87CD700585C0C /* MLCalendarCell.m */; };
 		09A4BCCF1CA87CD700585C0C /* MLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4BCCB1CA87CD700585C0C /* MLCalendarView.m */; };
 		09A4BCD01CA87CD700585C0C /* MLCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A4BCCC1CA87CD700585C0C /* MLCalendarView.xib */; };
+		09E8F4CC1D80D73B0064594C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E8F4AB1D80C9AD0064594C /* NotificationCenter.framework */; };
+		09E8F4D11D80D73B0064594C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8F4D01D80D73B0064594C /* TodayViewController.swift */; };
+		09E8F4D41D80D73B0064594C /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09E8F4D21D80D73B0064594C /* TodayViewController.xib */; };
+		09E8F4D81D80D73B0064594C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09E8F4D61D80D73B0064594C /* InfoPlist.strings */; };
+		09E8F4DB1D80D73B0064594C /* HFWeekToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 09E8F4CB1D80D73B0064594C /* HFWeekToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		09E8F4DF1D80D75E0064594C /* HFCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A4BCB81CA1E9C500585C0C /* HFCalendar.swift */; };
+		09E8F4E01D80D7630064594C /* MLCalendarBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4BCC71CA87CD700585C0C /* MLCalendarBackground.m */; };
+		09E8F4E11D80D7630064594C /* MLCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4BCC91CA87CD700585C0C /* MLCalendarCell.m */; };
+		09E8F4E21D80D7630064594C /* MLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4BCCB1CA87CD700585C0C /* MLCalendarView.m */; };
+		09E8F4E31D80D7630064594C /* MLCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A4BCCC1CA87CD700585C0C /* MLCalendarView.xib */; };
+		09E8F4E51D80E0720064594C /* CalendarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8F4E41D80E0720064594C /* CalendarDelegate.swift */; };
+		09E8F4E61D80E13D0064594C /* CalendarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8F4E41D80E0720064594C /* CalendarDelegate.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09E8F4D91D80D73B0064594C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09A4BCA01CA1E6CF00585C0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09E8F4CA1D80D73B0064594C;
+			remoteInfo = HFWeekToday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09E8F4BF1D80C9AD0064594C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				09E8F4DB1D80D73B0064594C /* HFWeekToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		09A4BCA81CA1E6CF00585C0C /* HFWeekApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFWeekApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +68,14 @@
 		09A4BCCA1CA87CD700585C0C /* MLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLCalendarView.h; path = Calendar/MLCalendarSample/MLCalendarView.h; sourceTree = "<group>"; };
 		09A4BCCB1CA87CD700585C0C /* MLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLCalendarView.m; path = Calendar/MLCalendarSample/MLCalendarView.m; sourceTree = "<group>"; };
 		09A4BCCC1CA87CD700585C0C /* MLCalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MLCalendarView.xib; path = Calendar/MLCalendarSample/MLCalendarView.xib; sourceTree = "<group>"; };
+		09E8F4AB1D80C9AD0064594C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		09E8F4CB1D80D73B0064594C /* HFWeekToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HFWeekToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		09E8F4CF1D80D73B0064594C /* HFWeekToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HFWeekToday.entitlements; sourceTree = "<group>"; };
+		09E8F4D01D80D73B0064594C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		09E8F4D31D80D73B0064594C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		09E8F4D51D80D73B0064594C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09E8F4D71D80D73B0064594C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09E8F4E41D80E0720064594C /* CalendarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +86,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09E8F4C81D80D73B0064594C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E8F4CC1D80D73B0064594C /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -49,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				09A4BCAA1CA1E6CF00585C0C /* HFWeekApp */,
+				09E8F4CD1D80D73B0064594C /* HFWeekToday */,
+				09E8F4AA1D80C9AD0064594C /* Frameworks */,
 				09A4BCA91CA1E6CF00585C0C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				09A4BCA81CA1E6CF00585C0C /* HFWeekApp.app */,
+				09E8F4CB1D80D73B0064594C /* HFWeekToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +122,7 @@
 				09A4BCC41CA87CCA00585C0C /* MLCalendar */,
 				09A4BCAB1CA1E6CF00585C0C /* AppDelegate.swift */,
 				09A4BCB81CA1E9C500585C0C /* HFCalendar.swift */,
+				09E8F4E41D80E0720064594C /* CalendarDelegate.swift */,
 				09A4BCAD1CA1E6CF00585C0C /* Assets.xcassets */,
 				09A4BCAF1CA1E6CF00585C0C /* MainMenu.xib */,
 				09A4BCB21CA1E6CF00585C0C /* Info.plist */,
@@ -89,6 +145,34 @@
 			name = MLCalendar;
 			sourceTree = "<group>";
 		};
+		09E8F4AA1D80C9AD0064594C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09E8F4AB1D80C9AD0064594C /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09E8F4CD1D80D73B0064594C /* HFWeekToday */ = {
+			isa = PBXGroup;
+			children = (
+				09E8F4D01D80D73B0064594C /* TodayViewController.swift */,
+				09E8F4D21D80D73B0064594C /* TodayViewController.xib */,
+				09E8F4D51D80D73B0064594C /* Info.plist */,
+				09E8F4D61D80D73B0064594C /* InfoPlist.strings */,
+				09E8F4CE1D80D73B0064594C /* Supporting Files */,
+			);
+			path = HFWeekToday;
+			sourceTree = "<group>";
+		};
+		09E8F4CE1D80D73B0064594C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09E8F4CF1D80D73B0064594C /* HFWeekToday.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,15 +183,34 @@
 				09A4BCA41CA1E6CF00585C0C /* Sources */,
 				09A4BCA51CA1E6CF00585C0C /* Frameworks */,
 				09A4BCA61CA1E6CF00585C0C /* Resources */,
+				09E8F4BF1D80C9AD0064594C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				09E8F4DA1D80D73B0064594C /* PBXTargetDependency */,
 			);
 			name = HFWeekApp;
 			productName = HFWeekApp;
 			productReference = 09A4BCA81CA1E6CF00585C0C /* HFWeekApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		09E8F4CA1D80D73B0064594C /* HFWeekToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09E8F4DC1D80D73B0064594C /* Build configuration list for PBXNativeTarget "HFWeekToday" */;
+			buildPhases = (
+				09E8F4C71D80D73B0064594C /* Sources */,
+				09E8F4C81D80D73B0064594C /* Frameworks */,
+				09E8F4C91D80D73B0064594C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HFWeekToday;
+			productName = HFWeekToday;
+			productReference = 09E8F4CB1D80D73B0064594C /* HFWeekToday.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -121,6 +224,10 @@
 				TargetAttributes = {
 					09A4BCA71CA1E6CF00585C0C = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2A7X7KDSR2;
+					};
+					09E8F4CA1D80D73B0064594C = {
+						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 2A7X7KDSR2;
 					};
 				};
@@ -139,6 +246,7 @@
 			projectRoot = "";
 			targets = (
 				09A4BCA71CA1E6CF00585C0C /* HFWeekApp */,
+				09E8F4CA1D80D73B0064594C /* HFWeekToday */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +262,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09E8F4C91D80D73B0064594C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E8F4E31D80D7630064594C /* MLCalendarView.xib in Resources */,
+				09E8F4D41D80D73B0064594C /* TodayViewController.xib in Resources */,
+				09E8F4D81D80D73B0064594C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -163,13 +281,35 @@
 			files = (
 				09A4BCCD1CA87CD700585C0C /* MLCalendarBackground.m in Sources */,
 				09A4BCCF1CA87CD700585C0C /* MLCalendarView.m in Sources */,
+				09E8F4E51D80E0720064594C /* CalendarDelegate.swift in Sources */,
 				09A4BCAC1CA1E6CF00585C0C /* AppDelegate.swift in Sources */,
 				09A4BCCE1CA87CD700585C0C /* MLCalendarCell.m in Sources */,
 				09A4BCB91CA1E9C500585C0C /* HFCalendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09E8F4C71D80D73B0064594C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E8F4E01D80D7630064594C /* MLCalendarBackground.m in Sources */,
+				09E8F4E21D80D7630064594C /* MLCalendarView.m in Sources */,
+				09E8F4E61D80E13D0064594C /* CalendarDelegate.swift in Sources */,
+				09E8F4D11D80D73B0064594C /* TodayViewController.swift in Sources */,
+				09E8F4E11D80D7630064594C /* MLCalendarCell.m in Sources */,
+				09E8F4DF1D80D75E0064594C /* HFCalendar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09E8F4DA1D80D73B0064594C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09E8F4CA1D80D73B0064594C /* HFWeekToday */;
+			targetProxy = 09E8F4D91D80D73B0064594C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		09A4BCAF1CA1E6CF00585C0C /* MainMenu.xib */ = {
@@ -178,6 +318,22 @@
 				09A4BCB01CA1E6CF00585C0C /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		09E8F4D21D80D73B0064594C /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09E8F4D31D80D73B0064594C /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		09E8F4D61D80D73B0064594C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09E8F4D71D80D73B0064594C /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -273,6 +429,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = HFWeekApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hellofresh.HFWeekApp;
@@ -291,11 +448,44 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = HFWeekApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hellofresh.HFWeekApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HFWeekApp/HFWeekApp-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		09E8F4DD1D80D73B0064594C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HFWeekToday/HFWeekToday.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HFWeekToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hellofresh.HFWeekApp.HFWeekToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HFWeekApp/HFWeekApp-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		09E8F4DE1D80D73B0064594C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HFWeekToday/HFWeekToday.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HFWeekToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hellofresh.HFWeekApp.HFWeekToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "HFWeekApp/HFWeekApp-Bridging-Header.h";
 			};
 			name = Release;
@@ -317,6 +507,15 @@
 			buildConfigurations = (
 				09A4BCB61CA1E6CF00585C0C /* Debug */,
 				09A4BCB71CA1E6CF00585C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09E8F4DC1D80D73B0064594C /* Build configuration list for PBXNativeTarget "HFWeekToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09E8F4DD1D80D73B0064594C /* Debug */,
+				09E8F4DE1D80D73B0064594C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

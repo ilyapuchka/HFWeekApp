@@ -38,7 +38,6 @@
 + (BOOL) isSameDate:(NSDate*)d1 date:(NSDate*)d2 {
 	if(d1 && d2) {
 		NSCalendar *cal = [NSCalendar currentCalendar];
-		cal.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
 		unsigned unitFlags = NSCalendarUnitDay | NSCalendarUnitYear | NSCalendarUnitMonth;
 		NSDateComponents *components = [cal components:unitFlags fromDate:d1];
 		NSInteger ry = components.year;

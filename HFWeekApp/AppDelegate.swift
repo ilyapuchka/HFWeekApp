@@ -9,9 +9,11 @@
 import Cocoa
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate, MLCalendarViewDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
+    lazy var calendarPresenter = CalendarPresenter()
+    var calendar: MLCalendarView { return calendarPresenter.calendar }
     
     lazy var statusItem: NSStatusItem = {
         let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
@@ -37,40 +39,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, MLCalendarViewDelegate {
         return popover
     }()
     
-    lazy var calendar: MLCalendarView = {
-        let calendar = MLCalendarView()
-        calendar.selectionColor = .lightGrayColor()
-        calendar.delegate = self
-        return calendar
-    }()
-    
-    func didSelectDate(selectedDate: NSDate!) {
-        guard let selectedDate = selectedDate else { return }
-        let week = HFCalendar.weekForDate(selectedDate)
-        calendar.setStartDate(HFCalendar.startDateForWeek(week), endDate: HFCalendar.endDateForWeek(week))
-        calendar.setWeek(week.handle)
-    }
-    
-    func didSelectCurrentWeek() {
-        let week = HFCalendar.currentWeek()
-        calendar.setStartDate(HFCalendar.startDateForWeek(week), endDate: HFCalendar.endDateForWeek(week))
-        calendar.setWeek(week.handle)
-    }
-    
-    func didSelectNextWeek(week: String) {
-        let currentWeek = HFWeek(string: week)!
-        let week = currentWeek.nextWeek
-        calendar.setStartDate(HFCalendar.startDateForWeek(week), endDate: HFCalendar.endDateForWeek(week))
-        calendar.setWeek(week.handle)
-    }
-    
-    func didSelectPreviousWeek(week: String) {
-        let currentWeek = HFWeek(string: week)!
-        let week = currentWeek.previousWeek
-        calendar.setStartDate(HFCalendar.startDateForWeek(week), endDate: HFCalendar.endDateForWeek(week))
-        calendar.setWeek(week.handle)
-    }
-    
     var timer: NSTimer!
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
@@ -94,10 +62,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, MLCalendarViewDelegate {
     }
     
     func updateWeek() {
-        let week = HFCalendar.currentWeek()
-        calendar.setStartDate(HFCalendar.startDateForWeek(week), endDate: HFCalendar.endDateForWeek(week))
-        calendar.setWeek(week.handle)
-        statusItem.title = week.handle
+        calendarPresenter.updateWeek()
+        statusItem.title = HFCalendar.currentWeek().handle
     }
     
     func showContextMenu(sender: NSStatusBarButton) {
